@@ -2,11 +2,12 @@
 
 ```c++
 /*
-Version:		V2.0
+Version:		V2.1
 Author:			UNKOWN
 Create Date:	UNKOWN
 Note:
-	2020/7/24	v2.0: Rebuid readme,add pic. By Vincent
+	2020/8/24	v2.1: Add pcb file.
+    2020/7/24	v2.0: Rebuid readme,add pic. By Vincent
 */
 ```
 
