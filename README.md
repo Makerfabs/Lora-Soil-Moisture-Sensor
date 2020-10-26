@@ -2,10 +2,11 @@
 
 ```c++
 /*
-Version:		V2.1
+Version:		V2.2
 Author:			UNKOWN
 Create Date:	UNKOWN
 Note:
+	2020/10/26	v2.2: Add a power-save verson.Using watch dog and sleep mode.
 	2020/8/24	v2.1: Add pcb file.
     2020/7/24	v2.0: Rebuid readme,add pic. By Vincent
 */
