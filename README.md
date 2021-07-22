@@ -46,6 +46,8 @@ The Lora soil moisture sensor is based on Atmel's Atmega328P, it collect local a
 
 An example of connecting to Lorawan is provided.For details on how to set TTN, see the Wiki：[Maduino_Zero_LoRaWAN_Node](https://www.makerfabs.com/wiki/index.php?title=Maduino_Zero_LoRaWAN_Node)
 
+**Only supporting the EU-868 and US-915**
+
 ## Setup Library
 
 Download from ：[arduino-lmic](https://github.com/matthijskooijman/arduino-lmic)
