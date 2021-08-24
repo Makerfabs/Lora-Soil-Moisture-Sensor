@@ -2,10 +2,11 @@
 
 ```c++
 /*
-Version:		V3.0
+Version:		V3.1
 Author:			UNKOWN
 Create Date:	UNKOWN
 Note:
+	2021/8/24	V3.1: Now can read ADC value without 555.
 	2021/7/22	V3.0: Now support Lorawan to TTN.
 	2020/10/26	v2.2: Add a power-save verson.Using watch dog and sleep mode.
 	2020/8/24	v2.1: Add pcb file.
@@ -42,19 +43,45 @@ The Lora soil moisture sensor is based on Atmel's Atmega328P, it collect local a
 
 ![2](md_pic/2.jpg)
 
-# Lorawan
+
+
+# Example List
+
+## LoraTransmitterADCAHT10
+
+Default factory firmware, can measure air temperature and humidity and soil moisture, and send through Lora.
+
+
+
+## PowerSaveMode_SoilSensor
+
+By putting the 328p and SX1278 to sleep, you can reduce power consumption by waking them up regularly.
+
+
+
+## lora_soil_no555
+
+Instead of the 555 chip, we can divide the clock source by 328P.
+
+Need to remove the R3 resistor from the PCB. And ADC results may be different from previous ones, around 910 in air and 740 in water.
+
+![no555](md_pic/no555.jpg)
+
+
+
+## Lorawan
 
 An example of connecting to Lorawan is provided.For details on how to set TTN, see the Wiki：[Maduino_Zero_LoRaWAN_Node](https://www.makerfabs.com/wiki/index.php?title=Maduino_Zero_LoRaWAN_Node)
 
 **Only supporting the EU-868 and US-915**
 
-## Setup Library
+### Setup Library
 
 Download from ：[arduino-lmic](https://github.com/matthijskooijman/arduino-lmic)
 
 And installer .zip library
 
-## Set EUI
+### Set EUI
 
 To connect through OTAA, you need to replace the following code with your own DEVEUI, APPEUI, and APPKEY.
 
