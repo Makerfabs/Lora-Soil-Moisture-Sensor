@@ -68,7 +68,7 @@ Detailed power consumption data is being edited....
 
 The latest firmware is in:
 
-./Lora-Soil-Moisture-Sensor/example/Moisture_LowPower_RadioLib_v2.1
+./Lora-Soil-Moisture-Sensor/firmware/Moisture_LowPower_RadioLib_v2.1
 
 
 ### How to use
@@ -86,8 +86,6 @@ String back_str = node_id + " REPLY : SOIL " + message;
 //ID010123 REPLY : SOIL INEDX:0 H:48.85 T:30.50 ADC:896 BAT:1016
 ```
 
-
-
 - If you want to change the time, you can change it:
 
 ```c++
@@ -97,11 +95,15 @@ String back_str = node_id + " REPLY : SOIL " + message;
 
 ```
 
-
-
 - The degree of soil ADC is about 900 in air (completely dry) and 600 in water (completely wet).
 
+### Receiver
 
+A simple receiver demo is provided. You can use another Lora Moisture or Maduino Lora Radio as the receiver.
+
+Receive data through serial port display.
+
+The receiver code is in: .\Lora-Soil-Moisture-Sensor\firmware\Lora_Receiver_v1.0
 
 
 
@@ -127,11 +129,7 @@ String back_str = node_id + " REPLY : SOIL " + message;
 
 # Example List
 
-## Moisture_LowPower_RadioLib_v2.1.ino
-
-The latest firmware.
-
-
+Some historical codes cannot be used after PCB modification, please refer to the latest firmware.
 
 ## LoraTransmitterADCAHT10
 
