@@ -9,7 +9,7 @@
 String node_id = String("ID") + "010000";
 
 //Set sleep time, when value is 1 almost sleep 20s,when value is 450, almost 1 hour.
-#define SLEEP_CYCLE 1
+#define SLEEP_CYCLE 450
 
 //Lora set
 //Set Lora frequency
