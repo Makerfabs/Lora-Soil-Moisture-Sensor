@@ -31,7 +31,7 @@ Note:
 
 Product Link: [Lora_Soil_Moisture_Sensor](https://www.makerfabs.com/lora-soil-moisture-sensor.html)
 
-Wiki Link:  [Lora_Soil_Moisture_Sensor Wiki](https://www.makerfabs.com/wiki/index.php?title=Lora_Soil_Moisture_Sensor)
+Wiki Link:  [Lora_Soil_Moisture_Sensor_V3](https://www.makerfabs.com/wiki/index.php?title=Lora_Soil_Moisture_Sensor_V3)
 
 The Lora soil moisture sensor is based on Atmel's Atmega328P, it collects local air temperature/ humidity with sensor AHT10, and detect the soil humidity with capacitor-humility measurement solution with MCU clock, and transmit the local environment data to the gateway, with Lora communication, suit for applications for smart-farm, irrigation, agriculture, etc. 
 
