@@ -39,11 +39,11 @@ In applications, always you do not need to check the air/soil state continuously
 ## V3 
 In the latest version, the 555 chip has been removed so that the sleep current can be as low as 7.1uA. And added UID, can be used directly.
 
-**More details, see readme. md in the [V3]() folder.**
+**More details, see readme. md in the [V3](https://github.com/Makerfabs/Lora-Soil-Moisture-Sensor/tree/master/V3) folder.**
 
 
 ## V2
 Old version, containing 555 chip. A number of items are provided as references.
 
-**More details, see readme. md in the [V2]() folder.**
+**More details, see readme. md in the [V2](https://github.com/Makerfabs/Lora-Soil-Moisture-Sensor/tree/master/V2) folder.**
 
