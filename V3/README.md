@@ -118,3 +118,13 @@ LoRa Radio expansion based on the LoRa module and provided a wireless Lot soluti
 
 We used LoRa Radio expansion and ESP32 3.5" TFT Touch with Camera to make a Lora control terminal, which can control multiple Lora devices at the same time through the touch screen and display the device status in real time.
 
+
+
+### RadioHead Demo
+
+The default parameters of RadioLib can reach about 800m communication distance, of course can be further, but we do not have time to debug Lora parameters.
+
+We provide an example that can reach 1.7km communication distance, which was debugged by a former colleague. It used to depend on some AVR libraries This made ESP32 unable to complier ReadHead library at the time, so we switched to RadioLib instead. But the latest version, ReadHead is available under ESP32.
+
+Please download the latest [RadioHead](http://www.airspayce.com/mikem/arduino/RadioHead/)
+
