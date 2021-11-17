@@ -13,9 +13,9 @@ String node_id = String("ID") + "010000";
 
 //Lora set
 //Set Lora frequency
-#define FREQUENCY 434.0
-//#define FREQUENCY 868.0
-//#define FREQUENCY 915.0
+// #define FREQUENCY 434.0
+// #define FREQUENCY 868.0
+#define FREQUENCY 915.0
 
 #define BANDWIDTH 125.0
 #define SPREADING_FACTOR 9

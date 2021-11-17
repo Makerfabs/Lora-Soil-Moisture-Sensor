@@ -59,7 +59,7 @@ Frequency hopping: disabled
 
 */
 
-#define FREQUENCY 434.0
+#define FREQUENCY 915.0
 #define BANDWIDTH 125.0
 #define SPREADING_FACTOR 9
 #define CODING_RATE 7
@@ -67,7 +67,7 @@ Frequency hopping: disabled
 #define PREAMBLE_LEN 8
 #define GAIN 0
 
-SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1);
+SX1276 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1);
 //SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1, SPI, SPISettings());
 
 

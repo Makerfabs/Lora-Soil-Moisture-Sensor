@@ -28,17 +28,17 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+//For Makepython Lora
+//!!! R6 resistors need to be welded, part of the old version is not welded.
+#define DIO0 35
+#define DIO1 39
 
-#define DIO0 36
-#define DIO1 27
-
-#define LORA_RST 33
-#define LORA_CS 32
+#define LORA_RST 2
+#define LORA_CS 25
 
 #define SPI_MOSI 13
 #define SPI_MISO 12
 #define SPI_SCK 14
-
 
 #define MP_ESP32_SSD1306_I2C_ADDR 0x3C
 #define MP_ESP32_SSD1306_WIDTH 128 // OLED display width, in pixels
@@ -68,7 +68,7 @@ Frequency hopping: disabled
 
 */
 
-#define FREQUENCY 434.0  // 868.0 or 915.0
+#define FREQUENCY 915.0 // 433.0, 868.0 or 915.0
 #define BANDWIDTH 125.0
 #define SPREADING_FACTOR 9
 #define CODING_RATE 7
@@ -81,14 +81,13 @@ Frequency hopping: disabled
 // DIO0 pin:  2
 // RESET pin: 9
 // DIO1 pin:  3
-//SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1);
-SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1, SPI, SPISettings());  //433Mhz
-// SX1276 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1, SPI, SPISettings());   868Mhz or 915Mhz
+// SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1);
+// SX1278 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1, SPI, SPISettings());  //433Mhz
+SX1276 radio = new Module(LORA_CS, DIO0, LORA_RST, DIO1, SPI, SPISettings()); //868Mhz or 915Mhz
 
 // or using RadioShield
 // https://github.com/jgromes/RadioShield
 //SX1278 radio = RadioShield.ModuleA;
-
 
 void setup()
 {
@@ -119,7 +118,7 @@ void setup()
         for (;;)
             ; // Don't proceed, loop forever
     }
-   
+
     display.clearDisplay();
     display.setTextSize(2);              // Normal 1:1 pixel scale
     display.setTextColor(SSD1306_WHITE); // Draw white text
@@ -127,9 +126,7 @@ void setup()
     display.println(F("Makerfabs"));
     display.display();
     delay(1000);
-    
 }
-
 
 void loop()
 {
@@ -149,17 +146,16 @@ void loop()
     int state = radio.receive(byteArr, 8);
   */
 
-
     if (state == ERR_NONE)
-    {        
+    {
         Serial.println(str);
         display.clearDisplay();
         display.setTextSize(1);              // Normal 1:1 pixel scale
         display.setTextColor(SSD1306_WHITE); // Draw white text
-        display.setCursor(0, 20);             // Start at top-left corner
+        display.setCursor(0, 20);            // Start at top-left corner
         display.print(str);
         display.display();
         delay(1000);
     }
-   delay(100); 
+    delay(100);
 }
