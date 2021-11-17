@@ -111,13 +111,13 @@ Receive data through serial port display.
 
 The receiver code is in: V3\example\Lora_Receiver_v1.0
 
-### Makerfas 3.5“ TFT Lora Controller
 
-[Makerfabs_3.5TFT_Lora_Controller](https://github.com/Makerfabs/Makerfabs_3.5TFT_Lora_Controller)
 
-LoRa Radio expansion based on the LoRa module and provided a wireless Lot solution (ESP32-LoRa). This board is designed for ESP32 3.5" TFT Touch with Camera (also for the 3.2" one), mainly used with the ESP32 3.5" TFT Touch board.
+### ESP32 Receiver
 
-We used LoRa Radio expansion and ESP32 3.5" TFT Touch with Camera to make a Lora control terminal, which can control multiple Lora devices at the same time through the touch screen and display the device status in real time.
+A simple receiver demo is provided. You can use a MakePython Lora as the receiver.
+
+Receive data and display on SSD1306.
 
 
 
