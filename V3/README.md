@@ -6,6 +6,7 @@ Version:		V5.0
 Author:			UNKOWN
 Create Date:	UNKOWN
 Note:
+	2021/12/15	V5.2: Fix RadioHead demo can't setModemConfig. 
 	2021/11/17  V5.1: Fix code bug,example "ESP32 Receiver" pin define wrong.
 	2021/10/22	V5.0: Modify the document structure. 
 	2021/9/26	V4.0: The new hardware removed the 555 chip, updated the BOM, and significantly improved battery life.

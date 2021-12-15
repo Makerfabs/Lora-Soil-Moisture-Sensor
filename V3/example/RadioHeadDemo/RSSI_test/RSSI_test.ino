@@ -11,8 +11,8 @@
 
 #define REC_MODE 0
 
-//#define ESP32_LORA
-#define AVR_LORA
+#define ESP32_LORA
+//#define AVR_LORA
 
 #ifdef ESP32_LORA
 
@@ -95,8 +95,8 @@ void setup()
   Serial.print("Set Freq to: ");
   Serial.println(RF95_FREQ);
 
-  //Long range, low bandwidth, reduced communication tolerance.
-  rf95.setModemConfig(Bw31_25Cr48Sf512)
+  // //Long range, low bandwidth, reduced communication tolerance.
+  rf95.setModemConfig(rf95.Bw31_25Cr48Sf512);
 
   // Defaults after init are 434.0MHz, 13dBm, Bw = 125 kHz, Cr = 4/5, Sf = 128chips/symbol, CRC on
 
