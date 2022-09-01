@@ -40,7 +40,7 @@ In applications, always you do not need to check the air/soil state continuously
 In the latest version, the 555 chip has been removed so that the sleep current can be as low as 7.1uA. And added UID, can be used directly.
 
 **More details, see readme. md in the [V3](https://github.com/Makerfabs/Lora-Soil-Moisture-Sensor/tree/master/V3) folder.**
-# Helium_MakerfabsSoilMoistureSensorV3
+# MakerfabsSoilMoistureSensorV3 For the Helium Network
 Adapted from <https://hackaday.io/project/180796-lorawan-soil-moisture-sensor>
 
 ## Equipment needed:
