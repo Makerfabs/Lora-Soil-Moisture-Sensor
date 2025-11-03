@@ -334,7 +334,7 @@ void send_lora()
     String back_str = "{";
     back_str += "\"Node_id\":\"" + node_id + "\",";
     back_str += "\"INDEX\":" + String(packetnum) + ",";    
-    back_str += "\"Bat\":" + String(batValue); + ",";
+    back_str += "\"Bat\":" + String(batValue) + ",";
     back_str += "\"Humidity\":" + String(humidity, 2) + ",";
     back_str += "\"Temperature\":" + String(temperature, 2) + ",";
     back_str += "\"ADC\":" + String(sensorValue) + "}";
